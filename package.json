@@ -16,7 +16,7 @@
     "minimatch": "~0.3.0",
     "glob": "~4.0.0"
   },
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Grunt tasks to wire javascript src files to your index.html",
   "devDependencies": {
     "tap": "~0.4.0"
@@ -24,7 +24,7 @@
   "scripts": {
     "test": "tap test/*.js"
   },
-  "repository": "evaisse/wiresrc",
+  "repository": "evaisse/grunt-wiresrc",
   "keywords": [
     "dependencies",
     "tasks",

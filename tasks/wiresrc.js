@@ -1,13 +1,18 @@
 'use strict';
 
-var bowerConfig = require('bower-config');
-var fs = require('fs');
-var path = require('path');
-var glob = require('glob');
-var _ = require('lodash');
-var console = require('winston');
-var minimatch = require("minimatch");
+var fs = require('fs'),
+    path = require('path'),
+    glob = require('glob'),
+    _ = require('lodash'),
+    console = require('winston'),
+    minimatch = require("minimatch");
 
+/**
+ * WireSrc export functions to register grunt tasks
+ * 
+ * @param  {Object} grunt Grunt task manager instance
+ * @return {[type]}       [description]
+ */
 function wiresrc(grunt) {
 
     grunt.registerMultiTask('srcInstall', 'Inject all local components in your HTML file.', function () {
