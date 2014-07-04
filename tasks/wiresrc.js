@@ -10,9 +10,6 @@ var minimatch = require("minimatch");
 
 function wiresrc(grunt) {
 
-
-    
-
     grunt.registerMultiTask('srcInstall', 'Inject all local components in your HTML file.', function () {
 
         var files = {},
@@ -50,19 +47,10 @@ function wiresrc(grunt) {
             });
         });
 
-        
         console.info("Files ot inject : ", _.values(files));
 
-        require('../lib/inject')(files, config);
+        require('wiresrc').inject(files, config);
 
-        // var cwd = this.data.cwd || '.';
-        // var options = this.data;
-
-        // options.bowerJson = _findBowerJSON(cwd);
-        // options.directory = _findBowerDirectory(cwd);
-        // options.src = grunt.file.expand(options.src);
-
-        // require('wiredep')(options);
     });
 
 }
