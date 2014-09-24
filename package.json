@@ -24,7 +24,10 @@
   "scripts": {
     "test": "tap test/*.js"
   },
-  "repository": "aheller/grunt-wiresrc",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aheller/grunt-wiresrc"
+  },
   "keywords": [
     "dependencies",
     "tasks",
