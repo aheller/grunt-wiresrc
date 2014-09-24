@@ -24,13 +24,12 @@
   "scripts": {
     "test": "tap test/*.js"
   },
-  "repository": "evaisse/grunt-wiresrc",
+  "repository": "aheller/grunt-wiresrc",
   "keywords": [
     "dependencies",
     "tasks",
     "grunt",
     "webapp"
   ],
-  "author": "Emmanuel VAÏSSE <evaisse@gmail.com> (http://evaisse.github.io/)",
   "license": "ISC"
 }
