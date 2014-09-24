@@ -26,8 +26,7 @@ function wiresrc(grunt) {
         this.requiresConfig(['srcInstall', this.target, 'src']);
 
         config = this.data;
-
-        appPath = path.resolve(grunt.config.get('config').app);
+        appPath = config.cwd+'/' || 'app/';
 
         Object.keys(config.scope).forEach(function (type) {
             // console.info(config.scope[type]);
