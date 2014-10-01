@@ -49,7 +49,7 @@ function wiresrc(grunt) {
             });
         });
 
-        console.info("Files ot inject : ", _.values(files));
+        console.info("Files to inject: ", _.values(files));
 
         require('wiresrc').inject(files, config);
 
