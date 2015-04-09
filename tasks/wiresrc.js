@@ -21,12 +21,14 @@ function wiresrc(grunt) {
             sortedFiles = {},
             excludeList = [],
             appPath,
+            prefixPath,
             config;
 
         this.requiresConfig(['srcInstall', this.target, 'src']);
 
         config = this.data;
         appPath = config.cwd+'/' || 'app/';
+        prefixPath = config.prefixPath || '';
 
         Object.keys(config.scope).forEach(function (type) {
             config.scope[type].includes.forEach(function (pattern) {
@@ -44,7 +46,7 @@ function wiresrc(grunt) {
                             return;
                         }
                     }
-                    files[path] = path.substr(appPath.length);
+                    files[path] = prefixPath+path.substr(appPath.length);
                 });
             });
         });
