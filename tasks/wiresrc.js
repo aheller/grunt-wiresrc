@@ -4,7 +4,6 @@ var fs = require('fs'),
     path = require('path'),
     glob = require('glob'),
     _ = require('lodash'),
-    console = require('winston'),
     minimatch = require("minimatch");
 
 /**
